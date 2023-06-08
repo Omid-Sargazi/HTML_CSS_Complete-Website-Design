@@ -1,4 +1,4 @@
-/* -----------Variables----------- */
+/*-----------Variables----------- */
 :root{
     /* text colors */
     --text-gray:#808291;
@@ -152,7 +152,6 @@ font-family: var(--font-poppins);
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
-
 .py-10{
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
@@ -186,9 +185,12 @@ font-family: var(--font-poppins);
 .btn-shadow{
     box-shadow: var(--box-shadow);
 }
+
+
 .btn-primary:hover{
-    background: var(--bg-gradient-indigo);
+    background: var(--bg-gradient-indigo)
 }
+
 .bg-cover{
     background: var(--bg-cover);
     object-fit: fill;
@@ -212,6 +214,56 @@ font-family: var(--font-poppins);
     width: 50%;
 }
 
+/* ----------------Navigation----------------  */
+#nav{
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: var(--text-light);
+    flex-direction: column;
+}
+#nav .collapse{
+    max-height:0px ;
+    overflow-y: hidden;
+    transition: all 0.9s ease-in;
+}
+#nav .collapse ul{
+    flex-direction: column;
+    text-align: center;
+    padding: 0 3rem;
+}
+#nav .collapse ul>li{
+    padding: 0 1.5rem;
+    line-height: 3rem;
+    font-size: 1.1rem;
+}
+#nav .toggle-btn button{
+    font-size: 2rem;
+    position: absolute;
+    right: 0;top: 0;
+    padding: 1rem;
+    color: var(--text-dark2);
+}
+#nav .flex-initial ul button{
+    display: none;
+}
+.active{
+    max-height: 50vh !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------/Navigation----------------  */
 
 
 
@@ -265,4 +317,4 @@ font-family: var(--font-poppins);
 
 
 
-/* -----------/Global classes----------- */
+/* -----------/Global classes-----------
