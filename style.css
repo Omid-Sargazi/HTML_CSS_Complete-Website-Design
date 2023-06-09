@@ -152,6 +152,10 @@ font-family: var(--font-poppins);
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
+.py-5{
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+}
 .py-10{
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
@@ -254,16 +258,27 @@ font-family: var(--font-poppins);
 /* -------------------Media Query------------------- */
 /* for large screen sm(640px) */
 @media(min-width:640px){
-
+    .container{
+        width: 640px;
+    }
+    .sm-text-xl{
+        font-size: 3em;
+    }
 }
 
 
 /* for large screen md (768px) */
 @media(min-width:768px){
+    .container{
+       width: 768px;
+    }
 
 }
 /* for large screen lg (1024px) */
 @media(min-width:1024px){
+    .container{
+        width: 1024px;
+    }
     #nav .toggle-btn button{
         display: none;
     }
@@ -283,6 +298,9 @@ font-family: var(--font-poppins);
 
 /* for large screen xl (1280px) */
 @media(min-width:1280px){
+    .container{
+        width: 1280px;
+    }
     #nav{
         background: transparent !important;
     }
@@ -303,9 +321,21 @@ font-family: var(--font-poppins);
 
 
 /* ----------------/Navigation----------------  */
+/* ----------------Banner area----------------  */
 
-
-
+#site-main .banner-area{
+    width: 100%;
+    position: relative;
+    background: var(--bg-cover);
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: -99;
+}
+#site-main .banner-area .banner-title{
+    height: 96vh;
+    padding-top: 16rem;
+}
+/* ----------------/Banner area----------------  */
 
 
 
