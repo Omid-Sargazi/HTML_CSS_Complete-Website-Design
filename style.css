@@ -275,7 +275,9 @@ font-family: var(--font-poppins);
     .md-text-left{
         text-align: left;
     }
-
+    .md-mx-initial{
+        margin: initial;
+    }
 }
 /* for large screen lg (1024px) */
 @media(min-width:1024px){
@@ -402,7 +404,74 @@ font-family: var(--font-poppins);
 /* ----------------/digital life area----------------  */
 
 
+/* ----------------/Counting  area----------------  */
+#site-main .counting-area{
+    padding: 7em 0;
+}
+#site-main .counting-area .grid-one p{
+    width: 80%;
+}
+#site-main .counting-area .count-box{
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
 
+}
+#site-main .counting-area .count-box .grid{
+    /* display: -ms-inline-grid; */
+    grid-gap: 2px;
+    border-radius: 20px;
+    background: var(--text-light);
+    box-shadow: var(--box-shadow);
+}
+#site-main .counting-area .count-box .grid div{
+    background-color: white;
+    padding: 2em 2.5em;
+    text-align: center;
+}
+
+/* ----------------/Counting  area----------------  */
+
+
+/* ----------------Card  area----------------  */
+#site-main .card-area .grid{
+    column-gap: 4em;
+    row-gap: 2em;
+}
+/* ----------------/Card  area----------------  */
+
+
+
+/* ----------------/recent work area----------------  */
+#site-main .recent-work-area .images-flex .flex-item{
+    width: 360px;
+    margin-bottom: 50px;
+}
+
+#site-main .recent-work-area .images-flex .flex-item img{
+    border-radius: 10px;
+
+}
+/* ----------------/recent work area----------------  */
+
+
+
+
+
+
+/* ----------------Card area area----------------  */
+#site-main .article-area .grid{
+    column-gap: 5em;
+}
+#site-main .article-area .card article{
+    border-radius: 10px;
+}
+/* ----------------/Card area area----------------  */
+
+
+.btn-shadow{
+    box-shadow: var(--box-shadow);
+}
 
 
 
